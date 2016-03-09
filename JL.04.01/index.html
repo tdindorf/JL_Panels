@@ -27,6 +27,9 @@
 			img{
 			height: 400px;
 			}
+			$( ".selector" ).tabs({
+			heightStyle: "content"
+			});
 			
 		</style>
 	</head>
@@ -122,43 +125,81 @@
 					</div>
 				</div>
 			</div>
-			<div id="tab-06"> 
-				<div style='width:100%; height:80%;'>
-					<div style='width:45%;float:left;'>
-						<p>
-							<ol><li>The J-tube is a device used to verify Boyle's law. It is a piece of glass tubing bent carefully into the form of a J. The shorter arm is sealed; the longer arm is open and about 70 to 100 cm long.
-								</li><li>The experimenter pours enough mercury into the tube to trap air in the closed arm and to have the mercury columns in each arm at the same level (see figure a).
-								</li><li>Since the diameter of the glass tube is uniform, the volume of any section of the tube is directly proportional to the length of the section.
-								</li><li>The experimenter measures the length of AB in figure a, and records this as volume V1.
-								</li><li>He then pours more mercury into the tube, waits a few minutes for the air in the closed end of the tube to return to room temperature, and then measures: (1) the length of BC and records it as V2 ; (2) the length of the mercury column C1D.
-								</li><li>He then adds more mercury, waits for a few minutes, and then records the data as in 5.
-								</li><li>Below is the data recorded in one such experiment. Before, during, and after the experiment, the experimenter checked atmospheric pressure and room temperature. The barometer was steady at 76.0 cm of mercury and the temperature was constant at 20 °C.
-							</li></ol>
-						</p>
+			<div id="tab-06">
+				<div class="tabs">
+					
+					<ul>
+						<li><a href="#tab-06.1"><span>TOK</span></a></li>
+						<li><a href="#tab-06.2"><span>Boyle</span></a></li>
+					</ul>
+					<div id="tab-06.1">
+						<object data='./txt/theory.html' style='width:100%; height:70%'></object>
 					</div>
-					<div style='width:45%; float:right; margin-left:8%'>
-						<table border="2"  cellpadding="5" cellspacing="0" width='80%'>
-							<colgroup>
-								<col span="4" style="width:25%">
-							</colgroup>
-							<tr><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td></tr>
-							<tr><th>Volume<br/>/ cm³</th><th>gauge pressure<br/>/ cm Hg</th><th>absolute pressure<br/>/ cm Hg</th><th>product of coulmns (1) and (3), to 3 s.f.</th></tr>
-							<tr><td>4.8</td><td>0.0</td><td>76.0</td><td>365</td></tr>
-							<tr><td>4.0</td><td>15.7</td><td>91.7</td><td>367</td></tr>
-							<tr align="center"><td>3.2</td><td>38.4</td><td>114.4</td><td>366</td></tr>
-							<tr align="center"><td>2.4</td><td>75.5</td><td>151.5</td><td>364</td></tr>
-							<tr align="center"><td>1.6</td><td>148.0</td><td>224.0</td><td>358</td></tr>
-							<tr align="center"><td>1.2</td><td>224.0</td><td>300.0</td><td>360</td></tr>
-						</table>
+					<div id="tab-06.2">
+						<div style='width:100%; height:70%'>
+							<div style='width:45%; float:left;'>
+								<p>
+									<ol><li>The J-tube is a device used to verify Boyle's law. It is a piece of glass tubing bent carefully into the form of a J. The shorter arm is sealed; the longer arm is open and about 70 to 100 cm long.
+										</li><li>The experimenter pours enough mercury into the tube to trap air in the closed arm and to have the mercury columns in each arm at the same level (see figure a).
+										</li><li>Since the diameter of the glass tube is uniform, the volume of any section of the tube is directly proportional to the length of the section.
+										</li><li>The experimenter measures the length of AB in figure a, and records this as volume V1.
+										</li><li>He then pours more mercury into the tube, waits a few minutes for the air in the closed end of the tube to return to room temperature, and then measures: (1) the length of BC and records it as V2 ; (2) the length of the mercury column C1D.
+										</li><li>He then adds more mercury, waits for a few minutes, and then records the data as in 5.
+										</li><li>Below is the data recorded in one such experiment. Before, during, and after the experiment, the experimenter checked atmospheric pressure and room temperature. The barometer was steady at 76.0 cm of mercury and the temperature was constant at 20 °C.
+									</li></ol>
+								</p>
+							</div>
+							<div style='width:45%; float:right; margin-left:8%'>
+								<table border="2"  cellpadding="5" cellspacing="0" width='80%'>
+									<colgroup>
+										<col span="4" style="width:25%">
+									</colgroup>
+									<tr><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td></tr>
+									<tr><th>Volume<br/>/ cm³</th><th>gauge pressure<br/>/ cm Hg</th><th>absolute pressure<br/>/ cm Hg</th><th>product of coulmns (1) and (3), to 3 s.f.</th></tr>
+									<tr><td>4.8</td><td>0.0</td><td>76.0</td><td>365</td></tr>
+									<tr><td>4.0</td><td>15.7</td><td>91.7</td><td>367</td></tr>
+									<tr align="center"><td>3.2</td><td>38.4</td><td>114.4</td><td>366</td></tr>
+									<tr align="center"><td>2.4</td><td>75.5</td><td>151.5</td><td>364</td></tr>
+									<tr align="center"><td>1.6</td><td>148.0</td><td>224.0</td><td>358</td></tr>
+									<tr align="center"><td>1.2</td><td>224.0</td><td>300.0</td><td>360</td></tr>
+								</table>
+							</div>
+							
+						</div>
 					</div>
 					
+					
 				</div>
+				
 			</div>
 			<div id="tab-07">
 				<image src='./ims/JL.04.p07.png' height='500'/>
 			</div>
 			<div id="tab-08">
-				<object data='./txt/theory.html' style='width:100%; height:70%'></object>
+				<div>
+					<p>In the next few sections we will examine certain <b>laws</b>, and a <b>theory</b> used to <b>explain</b> them.</p>
+					<p>The words “law” and “theory” mean many different things to many people.
+					Here we will use the term <i>(physical) <b>law</i></b> to designate any <center><i>quantitative or qualitative <b>description</b>, in words or in mathematical symbols, of a <b>regularity</b> observed to exist among the <b>properties</b> of things.</i></center></p>
+					<p>In your study of physics you have already encountered such laws.
+					The mathematical descriptions of accelerated motion, <center>F = ma</center>and of the period of the simple pendulum, <center>T = 2π √(l/g)</center>are just two examples.</p>
+					<p><center>"The diffusion of gases is rapid relative to the diffusion of liquids or solids"</center>and<center>"the planets move around the Sun in elliptical paths"</center>are non-quantitative descriptions of physical phenomena we can call laws under the meaning assumed here.</p>
+				</div>
+				<div>
+					<p>In general, <center><i>physical laws result from our <b>observations</b> of <b>physical properties</b> and refer to things and events that can themselves be <b>directly observed</b> (and <b>measured</b>).</i></center></p>
+					
+					<p>We shall use the word <b><i>theory</i></b> (physicists sometimes use the word <b><i>model</i></b> instead) to designate a set of <b>assumptions</b> which are used to <b>explain</b>, among other things, the laws we formulate from our observations.
+						Such theories very often <b>assume the existence</b> of entities (<i>atoms, electrons, light corpuscles a.k.a. photons</i>, etc.) which are <b>not readily observed</b>, or in fact <b>not observable in any direct sense</b> at all (<i>virtual particles</i>, <i>quarks</i>, <i>black holes</i>, <i>Big Bang</i> etc).
+						The <i><b>atomic</b> theory</i> assumes that all matter consists of invisible particles called atoms.
+						Atoms are not directly observable, but the assumption that they exist enables us to explain what we observe to happen in chemical reactions.
+						The phenomena of static electricity are explained by the assumptions of the <i><b>electron</b> theory</i> even though no one has ever seen an electron.
+						"Children of blue-eyed parents are blue-eyed" is a statement of a physical law.
+						"Chromosomes are composed of different kinds of genes which are associated with inherited traits like colour of eyes, hair, etc.," is one assumption of a theory developed to explain the law.
+					</p>
+				</div>
+				<div>
+					<p><center><b>Theories</b> (or <b>models</b>) developed here consist of <b>sets of assumptions</b> which are <b>useful in explaining</b> what we actually <b>observe and describe</b> in physical <b>laws</b>.</center></p>
+					<p>	The notions of physical <i>law</i> and <i>theory</i> are subjects of much discussion in the history and philosophy of science, and the definitions used here cannot claim to be complete or categorical.</p>
+				</div>
 			</div>
 			<div id="tab-09"> 
 				<ol>
@@ -176,20 +217,21 @@
 				<div class="tabs">
 					<ul>
 						<li><a href="#tab-11.1"><span>Fig 11.1, 2</span></a></li>
-						<li><a href="#tab-11.3"><span>Fig 11.3, 4</span></a></li>
-						<li><a href="#tab-11.5"><span>Fig 11.5</span></a></li>
-						
+						<li><a href="#tab-11.2"><span>Fig 11.3, 4</span></a></li>
+						<li><a href="#tab-11.3"><span>Fig 11.5</span></a></li>
+
 					</ul>
 					<div id="tab-11.1">
-						<image src='./ims/JL.04.p11ab.png' />
+						<image src='./ims/JL.04.p11ab.png'/>
+					</div>
+					<div id="tab-11.2">
+						<image src='./ims/JL.04.p11cd.png'/>
 					</div>
 					<div id="tab-11.3">
-						<image src='./ims/JL.04.p11cd.png' />
+						<image src='./ims/JL.04.p11e.png'/>
 					</div>
-					<div id="tab-11.5">
-						<image src='./ims/JL.04.p11e.png' />
-					</div>
-				
+
+					
 				</div>
 			</div>
 		</div>
