@@ -24,9 +24,18 @@
 			border-bottom: solid 1px;
 			padding-top: 10px;
 			}
-			img{
-			height: 70%;
+			
+			img, image{
+			max-height:400px;
+			width:auto;
+			height:auto;
 			}
+			
+			object{
+			max-width:100%;
+			max-height:100%;
+			}
+			
 			$( ".selector" ).tabs({
 			heightStyle: "content"
 			});
@@ -53,6 +62,7 @@
 				<li><a href="#tab-18">Pan_18</a></li>
 				<li><a href="#tab-19">Pan_19</a></li>
 				<li><a href="#tab-20">Pan_20</a></li>
+				<li><a href="#tab-22">Pan_22</a></li>
 				<li><a href="#tab-23">Pan_23</a></li>
 				<li><a href="#tab-24">Pan_24</a></li>
 				<li><a href="#tab-25">Pan_25</a></li>
@@ -286,13 +296,13 @@
 			</div>
 			<div id="tab-19">
 				<div style='width:100%; height:70%'>
-									<div style='width:55%; float:left; margin-left:2%;'>
+					<div style='width:55%; float:left; margin-left:2%;'>
 						<img src='./ims/JL.04.p19.png' style='width:100%;'/>
 					</div>
 					<div style='width:40%; float:left;'>
 						<object data='./txt/txt_p19.html' style='height: 100%;' ></object>
 					</div>
-
+					
 					
 				</div>
 			</div>
@@ -307,7 +317,7 @@
 					</ul>
 					
 					<div id="tab-20.1">
-						<image src='./ims/JL.04.p20.1.png' height='500'/>
+						<image src='./ims/JL.04.p20.1.png' />
 					</div>
 					
 					<div id="tab-20.2">
@@ -324,6 +334,31 @@
 					</div>
 				</div>
 			</div>
+			<div id="tab-22">
+				<div class="tabs">
+					<ul>
+						<li><a href="#tab-22.1">Fig 22.1</a></li>
+						<li><a href="#tab-22.2">Fig 22.2, 3</a></li>
+						
+					</ul>
+					
+					<div id="tab-22.1">
+						<image src='./ims/JL.04.p22.1.png' />
+					</div>
+					
+					<div id="tab-22.2" style='width:100%; height:70%'>
+						<div style='width:48%; float:left; margin-left:2%;'><center>Fig. 2</center>
+							<object data='./txt/JL.04.p22.2.html' style='width:100%; height:100%'></object>
+						</div>
+						
+						<div style='width:48%; float:left;'><center>Fig. 3</center>
+							<img src='./ims/JL.04.p22.3.png' style='height:100%; border:1'/>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
 			<div id="tab-23">
 				<div class="tabs">
 					<ul>
@@ -336,40 +371,42 @@
 					</div>
 					
 					<div id="tab-23.2">
-						<object data='./txt/table_p23.html' style='width:100%; height:70% '></object>
+					<object data='./txt/table_p23.html' style='width:100%; height:70% '></object>
 					</div>
-					
-					
-				</div>
-			</div>
-			<div id="tab-24">
-				<div class="tabs">
+					</div>
+					</div>
+					<div id="tab-24">
+					<div class="tabs">
 					<ul>
-						<li><a href="#tab-24.1"><span>Fig 24.1, 2, 3</span></a></li>
-						<li><a href="#tab-24.2"><span>Table 24.4</span></a></li>
+					<li><a href="#tab-24.1"><span>Fig 24.1, 2, 3</span></a></li>
+					<li><a href="#tab-24.2"><span>Table 24.4</span></a></li>
+					<li><a href="#tab-24.5"><span>Fig 24.5</span></a></li>
 					</ul>
 					
 					<div id="tab-24.1">
-						<image src='./ims/JL.04.p24.png' height='500'/>
+					<image src='./ims/JL.04.p24.png' height='500'/>
 					</div>
 					
 					<div id="tab-24.2">
-						<object data='./txt/table_p24.html' style='width:100%; height:70%'></object>
+					<object data='./txt/table_p24.html' style='width:100%; height:70%'></object>
 					</div>
 					
+					<div id="tab-24.5">
+					<image src='./ims/JL.04.p24.5.png'/>
+					</div>
 					
-				</div>
-			</div>
-			<div id="tab-25">
-				<div>
+					</div>
+					</div>
+					<div id="tab-25">
+					<div>
 					<object data='./txt/JL.04.p25.html' style='width:100%; height:70%'></object>
-				</div>
-			</div>
-		</div>
-		
-		<script>
-			$( ".tabs" ).tabs();
-		</script>
-		
-	</body>
-</html>																																																																																																																
+					</div>
+					</div>
+					</div>
+					
+					<script>
+					$( ".tabs" ).tabs();
+					</script>
+					
+					</body>
+					</html>																																																																																																																												
