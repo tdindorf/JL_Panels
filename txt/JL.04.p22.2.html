@@ -1,0 +1,84 @@
+
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"  width="100%" height="90%"
+viewbox='0 0 400 300'>
+  <!--rect width='200' height='300' fill='none' stroke='#00f' /-->
+  <defs>
+    <clipPath id='cylinderClip'>
+      <path d='M-50 -100 h100 v 300 a 50 10 0 0 1 -100 0v -200' />
+    </clipPath>
+    <clipPath id='svgClip'>
+      <rect width='200' height='300' />
+    </clipPath>
+    <path id='txtPath' d='M0 30 a 50 10 0 1 0 100 0' />
+    <linearGradient id="svg_1" x1="0" y1="0" x2="1" y2="0" spreadMethod="reflect">
+      <stop stop-color="#430" offset="0" />
+      <stop stop-color="#999" offset="0.7" />
+      <stop stop-color="#430" offset="1" />
+    </linearGradient>
+    <linearGradient id="svg_2" x1="0" y1="0" x2="1" y2="0" spreadMethod="reflect">
+      <stop stop-color="#034" offset="0" />
+      <stop stop-color="#999" offset="0.3" />
+      <stop stop-color="#034" offset="1" />
+    </linearGradient>
+    <linearGradient id="svg_3" x1="0" y1="0.3" x2="1" y2="0.7" spreadMethod="reflect">
+      <stop stop-color="#210" offset="0" />
+      <stop stop-color="#999" offset="0.5" />
+      <stop stop-color="#210" offset="1" />
+    </linearGradient>
+    <linearGradient id="svg_4" x1="0" y1="0.3" x2="1" y2="0.7" spreadMethod="reflect">
+      <stop stop-color="#012" offset="0" />
+      <stop stop-color="#999" offset="0.5" />
+      <stop stop-color="#012" offset="1" />
+    </linearGradient>
+    <radialGradient id="rgrad5" cx="55%" cy="30%">
+      <stop id='stop1' offset="0%" style="stop-opacity:1" />
+      <stop id='stop2' offset="200%" style="stop-opacity:1" />
+    </radialGradient>
+  </defs>
+
+  <g transform='translate(300 150) rotate(90 0 0)'>
+    <g id='cylinder' stroke='#600' stroke-width='1' transform='translate(-50 0)'>
+      <!--circle id='exhaust' cx="50" cy="100" r="400" style="stroke: none; fill: url(#rgrad5);" /-->
+      <rect id='source' x='-175' y='20' width='400' height='400' style="stroke: none; fill: url(#rgrad5);"/>
+      <path fill="#fc6" d='M-4 0 a 54 12 0 1 1 108 0 v 200 a 54 12 0 1 1 -108 0v -200' />
+      <path fill="none" d='M 0 0 h-4 m 0 200 h 4 m 100 0 h 4 m 0 -200 h -4' />
+      <path fill="url(#svg_1)" d='M0 0 a 50 10 0 1 1 100 0 v 200 a 50 10 0 1 1 -100 0v -200' />
+      <path id='inside_edge' id="svg_1" d='M0 200 a 50 10 0 1 1 100 0' fill='none' stroke='#444' stroke-width='1' />
+      <path d='M0 0 a 50 10 0 1 0 100 0' fill='none' stroke='#444' stroke-width='1' />
+      <ellipse fill="url(#svg_3)" rx='50' ry='10' cx='50' cy='200' stroke='none' />
+
+    </g>
+    <g clip-path="url(#cylinderClip)">
+      <g>
+
+        <g id='pistonG' transform='translate(0 0)' stroke='#009' stroke-width='1'>
+          <g id='piston_group' transform='translate(-50 0)'>
+            <path id='gas' d='M0 0 h100 v400 h-100 z' fill='rgb(255,0,0)' stroke='none' opacity='0.5' />
+            <path id='piston_block' fill="url(#svg_2)" d='M0 0 a 50 10 0 0 0 100 0 v 50 
+							a 50 10 0 1 1 -100 0 
+							v -50' />
+            <ellipse fill="url(#svg_4)" rx='50' ry='10' cx='50' />
+          </g>
+          <path id='force' d='M 0 0 l 10 -20 -5 0 0 -50 -10 0 0 50 -5 0 10 20' 
+            fill='#0aa' />
+          <text id='piston_label' x='0' y='0' style='stroke:none; fill: #000; text-anchor:middle;'
+          transform='rotate(-90 0 0) translate(-30 0) '>
+            piston</text>
+
+        </g>
+
+      </g>
+
+    </g>
+    <path id='top_front_edge' d='M-50 0 a 50 10 0 1 0 100 0' fill='none' stroke='#fff' stroke-width='1' />
+    <text id='env_label' style='stroke:none; fill: #000; text-anchor:middle;'
+    transform='rotate(-90 0 0) translate(-150 100) '>
+      Insulator</text>
+  </g>
+</svg>
+
+	
+	
+	<script src="./Carnot01.js"></script>
+	
+
